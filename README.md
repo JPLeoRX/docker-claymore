@@ -8,4 +8,4 @@ You must load your own "config.txt" when running this container.
 
 Run command example: 
 
-`sudo docker run --rm -it --gpus '"device=0,1,2,3"' jpleorx:/docker-claymore:latest -v /my-claymore-config:/claymore-config`
+`sudo docker run -it --rm --gpus '"device=0,1,2,3"' -v /claymore-config:/claymore-config jpleorx/docker-claymore:latest`
